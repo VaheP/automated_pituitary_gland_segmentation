@@ -1,0 +1,25 @@
+python: 3.12.11
+torch: 2.8.0
+cuda: "12.8"
+nnunetv2: 2.6.2
+dataset: Dataset001_PituitaryMorphometryROI
+trainer: nnUNetTrainer
+plans: nnUNetPlans
+configuration: 3d_fullres
+epochs: 1000
+folds: [0, 1, 2, 3, 4]
+checkpoint: checkpoint_final.pth
+target_spacing: [1.1999998092651367, 0.9375, 0.9375]
+median_shape: [31, 68, 68]
+patch_size: [32, 80, 80]
+batch_size: 6
+normalization: ZScoreNormalization
+normalization_mask: false
+image_interpolation_order: 3
+segmentation_interpolation_order: 1
+probability_interpolation_order: 1
+inference_tile_step_size: 0.5
+inference_gaussian: true
+inference_mirroring: true
+training_foreground_percentile_00_5: 60.0
+training_foreground_percentile_99_5: 3461.0

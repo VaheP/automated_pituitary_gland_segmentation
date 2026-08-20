@@ -1,0 +1,15 @@
+canonical_orientation: RAS
+model_orientation: PSR
+plane: sagittal
+threshold_min: 30
+threshold_max: 255
+erosion_structure: [3, 3]
+closing_structure: [7, 7]
+component: largest
+crop_divisor: 3.3
+border_crop: 5
+depth_radius: 15
+depth_slices: 31
+tilt_correction: true
+training_shift_seed: 42
+data_efficiency_shifted_crops_per_subject: 5

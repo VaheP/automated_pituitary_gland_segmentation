@@ -1,0 +1,7 @@
+ixi_train_images: /path/to/IXI/train/images
+ixi_test_images: /path/to/IXI/test/images
+ixi_train_masks: data/masks/train
+ixi_test_masks: data/masks/test
+nnunet_raw: /path/to/nnUNet_raw
+nnunet_preprocessed: /path/to/nnUNet_preprocessed
+nnunet_results: /path/to/nnUNet_results
